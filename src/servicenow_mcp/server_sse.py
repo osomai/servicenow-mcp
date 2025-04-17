@@ -62,7 +62,6 @@ class ServiceNowMCP(ServiceNowMCP):
             config: Server configuration, either as a dictionary or ServerConfig object.
         """
         super().__init__(config)
-        self.mcp_server = FastMCP("ServiceNow", port=8080, host="localhost")
 
     def start(self, host: str = "0.0.0.0", port: int = 8080):
         """
